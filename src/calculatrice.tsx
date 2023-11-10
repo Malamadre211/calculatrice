@@ -22,7 +22,7 @@ const Calculator: React.FC<CalculatorProps> = ({ input, onOperatorClick, onNumbe
       <div className="calculator-buttons">
 
       <div className="calculator-operators">
-          {['+', '-', 'x', '/'].map((operator) => (
+          {['+', '-', '*', '/'].map((operator) => (
             <button key={operator} onClick={() => onOperatorClick(operator)}>
               {operator}
             </button>
